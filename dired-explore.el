@@ -90,11 +90,13 @@
     (?9  . "[9(]") (?0  . "[0)]"))
   "Alist of KEY vs REGEXP. For example, (?! . \"[1!]\")
   represents that the key \"!\" searches either \"1\" or \"!\"."
+  :type '(alist :key-type character :value-type string)
   :group 'dired-explore)
 
 (defcustom dired-explore-default-key "[^0-9a-z]"
   "REGEXP for keys that are not specified in
   \"dired-explore-key-table\"."
+  :type 'string
   :group 'dired-explore)
 
 (defun dired-explore--beginning-of-filename-p (&optional point)
