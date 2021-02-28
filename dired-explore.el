@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t -*-
 ;;; dired-explore.el --- MS Explorer-like incremental search for dired
 
 ;; Copyright (C) 2015 zk_phi
